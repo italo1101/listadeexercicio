@@ -17,7 +17,7 @@ public class App {
         Carro carro = new Carro("Toyota", "Corolla", 2022, 4);
         Moto moto = new Moto("Honda", "CB500", 2021, true);
 
-        System.out.println("=== VEÍCULOS ===");
+        System.out.println("=== Veículos ===");
         carro.exibirInfo();
         carro.acelerar();
 
@@ -26,56 +26,56 @@ public class App {
         moto.exibirInfo();
         moto.acelerar();
 
-        System.out.println("\n=== DISPOSITIVOS ELETRÔNICOS ===");
+        System.out.println("\n=== Dispositivos Eletronicos ===");
 
-        Computador pc = new Computador("Dell", "XPS 15", "Windows 11");
-        Smartphone celular = new Smartphone("Apple", "iPhone 14", true);
+        Computador computador = new Computador("Dell", "XPS 15", "Windows 11");
+        Smartphone celular = new Smartphone("Samsung", "S24", true);
 
-        pc.exibirInfo();
-        pc.ligar();
+        computador.exibirInfo();
+        computador.ligar();
 
         System.out.println();
 
         celular.exibirInfo();
         celular.ligar();
 
-        System.out.println("\n=== AGENDA DE CONTATOS ===");
+        System.out.println("\n=== Agenda de Contatos ===");
 
         Agenda agenda = new Agenda();
 
-        ContatoPessoal amigo = new ContatoPessoal("João", "11987654321");
-        ContatoProfissional colega = new ContatoProfissional("Maria", "TechCorp", "maria@techcorp.com");
+        ContatoPessoal amigo = new ContatoPessoal("Italo", "11987654321");
+        ContatoProfissional colega = new ContatoProfissional("Ana", "TechCorp", "ana@techcorp.com");
 
         agenda.adicionarContato(amigo);
         agenda.adicionarContato(colega);
 
         agenda.listarContatos();
 
-        System.out.println("\n=== GERENCIADOR FINANCEIRO ===");
+        System.out.println("\n=== Gerenciador Financeiro ===");
 
         GerenciadorFinanceiro gerenciador = new GerenciadorFinanceiro();
 
         Despesa aluguel = new Despesa("Aluguel", 1500, true);
         Despesa jantar = new Despesa("Jantar", 80, false);
         Receita salario = new Receita("Salário", 5000, false);
-        Receita freelas = new Receita("Freelance", 800, true);
+        Receita freelance = new Receita("Freelance", 800, true);
 
         gerenciador.adicionarTransacao(aluguel);
         gerenciador.adicionarTransacao(jantar);
         gerenciador.adicionarTransacao(salario);
-        gerenciador.adicionarTransacao(freelas);
+        gerenciador.adicionarTransacao(freelance);
 
         gerenciador.listarTransacoes();
         System.out.println("\nSaldo Atual: R$" + gerenciador.calcularSaldo());
 
         gerenciador.listarRevisao();
 
-        System.out.println("\n=== GERENCIADOR DE INVESTIMENTOS ===");
+        System.out.println("\n=== Gerenciador de Investimentos ===");
 
         GestorInvestimentos gestor = new GestorInvestimentos();
 
-        InvestimentoRendaFixa cdb = new InvestimentoRendaFixa("CDB Banco X", 10000, 6.5);
-        InvestimentoRendaVariavel acao = new InvestimentoRendaVariavel("Ação ABC", 5000, 8, 3);
+        InvestimentoRendaFixa cdb = new InvestimentoRendaFixa("CDB Banco X", 25000, 6.5);
+        InvestimentoRendaVariavel acao = new InvestimentoRendaVariavel("Ação ABC", 7100, 8, 3);
 
         gestor.adicionarInvestimento(cdb);
         gestor.adicionarInvestimento(acao);
